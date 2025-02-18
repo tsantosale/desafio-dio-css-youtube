@@ -1,29 +1,32 @@
 body {
-    background-color: white;
+    background-color: rgb(245, 242, 253);
     color: black;
     margin: 0;
     padding: 0;
 }
 nav {
+    background: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid black;
+    position: relative;
 }
-.left { 
+.left, .right {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 15px;
-    margin-left: -200px;
 }
-.menu {
-    margin-right: 50px;
-}    
+.left {
+    margin-left: 20px;
+}
 .right {
+    margin-right: 20px;
+}
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
     display: flex;
     align-items: center;
-    gap: 15px;
 }
-
