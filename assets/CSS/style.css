@@ -3,6 +3,7 @@ body {
     color: black;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 nav {
     background: white;
@@ -29,4 +30,62 @@ nav {
     transform: translatex(-50%);
     display: flex;
     align-items: center;
+}
+main {
+    margin-top: 20px;
+}
+.video-principal {
+    margin-left: 75px;
+}
+.titulo-video h1 {
+    font-size: 20px;
+    font-weight: 700;
+    flex-wrap: nowrap;
+}
+.infos-canal {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espaçamento uniforme entre os elementos */
+    margin-top: 10px;
+}
+.nome-canal {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Alinhamento do texto à esquerda */
+    line-height: 1; /* Remove espaçamento extra entre as linhas */
+    margin: 0;
+}
+.nome-canal h2,
+.nome-canal p {
+    margin: 0;
+    padding: 0;
+}
+.botao-inscrevase,
+.like,
+.deslike,
+.compartilhar,
+.download {
+    display: flex;
+    align-items: center;
+}
+.botao-inscrevase img,
+.like img,
+.deslike img,
+.compartilhar img,
+.download img {
+    width: auto; /* Mantém o tamanho natural das imagens */
+    height: 30px; /* Ajuste conforme necessário */
+}
+.dados {
+    font-size: 12px;
+    margin-top: 30px;
+}
+.descricao {
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.descricao p {
+    color: rgba(81, 81, 81, 1);
+    margin-top: 0px;
 }
